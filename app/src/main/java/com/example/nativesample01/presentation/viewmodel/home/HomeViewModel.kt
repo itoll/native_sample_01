@@ -14,15 +14,15 @@ class HomeViewModel @Inject constructor(
     private val fetchTodosUseCase: FetchTodosUseCase
 ) : ViewModel() {
 
+    val todos = mutableStateListOf<TodoModel>()
+
     init {
         fetchTodos()
     }
 
-    val todos = mutableStateListOf<TodoModel>()
-
     private fun fetchTodos() {
         viewModelScope.launch {
-            todos.addAll(fetchTodosUseCase())
+            todos.addAll(fetchTodosUseCase.invoke())
         }
     }
 
