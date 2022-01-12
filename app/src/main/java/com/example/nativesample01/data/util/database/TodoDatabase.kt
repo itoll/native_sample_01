@@ -1,4 +1,4 @@
-package com.example.nativesample01.data.dataSource.main.local
+package com.example.nativesample01.data.util.database
 
 import androidx.room.Database
 import androidx.room.RoomDatabase

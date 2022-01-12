@@ -2,8 +2,8 @@ package com.example.nativesample01.di
 
 import android.content.Context
 import androidx.room.Room
-import com.example.nativesample01.data.dataSource.main.local.TodoDao
-import com.example.nativesample01.data.dataSource.main.local.TodoDatabase
+import com.example.nativesample01.data.util.database.TodoDao
+import com.example.nativesample01.data.util.database.TodoDatabase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
