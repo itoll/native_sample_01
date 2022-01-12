@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NativeSample01">
         <activity
-            android:name=".presentation.ui.screen.main.MainActivity"
+            android:name=".presentation.ui.screen.home.MainActivity"
             android:exported="true"
             android:label="@string/title_activity_main"
             android:theme="@style/Theme.NativeSample01.NoActionBar">
