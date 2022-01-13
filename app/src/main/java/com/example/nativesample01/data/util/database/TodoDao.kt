@@ -5,6 +5,9 @@ import androidx.room.*
 @Dao
 interface TodoDao {
 
+    @Query("SELECT * FROM ${TodoConstants.TABLE_NAME} WHERE ${TodoConstants.COLUMN_ID}= :id")
+    suspend fun getItemUsingId(id: Long): TodoEntity
+
     @Query("SELECT * FROM ${TodoConstants.TABLE_NAME}")
     suspend fun getAll(): List<TodoEntity>
 

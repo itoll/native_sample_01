@@ -1,4 +1,4 @@
-package com.example.nativesample01.data.dataSource.home.local.model
+package com.example.nativesample01.data.util.database.model
 
 data class TodoModel(
     val id: Int,
