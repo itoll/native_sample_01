@@ -1,6 +1,6 @@
 package com.example.nativesample01.data.util.mapper
 
-import com.example.nativesample01.data.dataSource.home.local.model.TodoModel
+import com.example.nativesample01.data.util.database.model.TodoModel
 import com.example.nativesample01.data.util.database.TodoEntity
 import javax.inject.Inject
 

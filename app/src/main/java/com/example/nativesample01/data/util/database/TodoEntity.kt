@@ -6,7 +6,7 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = TodoConstants.TABLE_NAME)
 data class TodoEntity(
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = TodoConstants.COLUMN_ID)
     val id: Int,
     val title: String,
